@@ -13,7 +13,7 @@ var http = require("http");
 var nodemailer = require("nodemailer");
 // This will store emails needed to send.
 // We can fetch it from DB (MySQL,Mongo) and store here.
-var listofemails = ["deepak.singh@spaaksupertec.com","niraj.kumar@spaaksupertec.com","naresh.kumar@spaaksupertec.com",""]; 
+var listofemails = ["xxxxx","xxx","xxxx",""]; 
 // Will store email sent successfully.
 var success_email = [];
 // Will store email whose sending is failed. 
@@ -28,8 +28,8 @@ function massMailer() {
       transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: "deep.infotrench@gmail.com",
-            pass: "deep@123"
+            user: "xxxx",
+            pass: "xxxx"
         }
     });
 
@@ -39,8 +39,8 @@ function massMailer() {
         port: 587,
         debug: true,
         auth: {
-            user: 'deepak@ckmeout.com',
-            pass: 'Ya52Fjj##4567'
+            user: '',
+            pass: ''
         },
          tls: {
             rejectUnauthorized : false
